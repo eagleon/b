@@ -63,6 +63,7 @@
 										<th>设备</th>\
 										<th>语言</th>\
 										<th>分辨率</th>\
+										<th>retina</th>\
 									</tr>\
 								</thead>\
 								<tbody>\
@@ -74,6 +75,7 @@
 										<td>'+info.device+'</td>\
 										<td>'+info.language+'</td>\
 										<td>'+info.resolution+'</td>\
+										<td>'+info.retina+'</td>\
 									</tr>\
 								</tbody>\
 							</table>');
@@ -111,7 +113,24 @@
 									</tr>\
 								</tbody>\
 							</table>');
-						}
+						}	
+						document.writeln('<table>\
+								<thead>\
+									<tr>\
+										<th>retina</th>\
+										<th> </th>\
+										<th> </th>\
+									</tr>\
+								</thead>\
+								<tbody>\
+									<tr>\
+										<td>'+ info.retina + '</td>\
+										<td> </td>\
+										<td> </td>\
+									</tr>\
+								</tbody>\
+							</table>');
+						
 					</script>
 				</div>
 			</div>

@@ -166,11 +166,9 @@
             }
         }
         // 分辨率
-        var resolution = screen.width + "x" + screen.height;
-        if (devicePixelRatio == 2){
-            resolution = resolution + "(retina)"
-        }
-        _this.resolution = resolution
+        _this.resolution = screen.width + "x" + screen.height;
+        // retina screen
+        _this.retina = devicePixelRatio == 2 ? true:false;
 
         //浏览器版本信息
         var version = {
