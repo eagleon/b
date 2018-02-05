@@ -168,7 +168,7 @@
         // 分辨率
         _this.resolution = screen.width + "x" + screen.height;
         // retina screen
-        _this.retina = devicePixelRatio == 2 ? true:false;
+        _this.retina = (window.devicePixelRatio || 1 )== 2 ? true:false;
 
         //浏览器版本信息
         var version = {
